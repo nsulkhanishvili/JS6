@@ -70,6 +70,7 @@ axios()
             li.textContent = item.title;
             ul.appendChild(li);
         })
+        onsole.log(value)
     })
     .catch(err => {
         errorMsg(err);
@@ -86,6 +87,7 @@ axios()
             li.textContent = item.email;
             ul.appendChild(li);
         })
+        onsole.log(value)
     })
     .catch(err => {
         errorMsg(err);
@@ -102,7 +104,7 @@ axios('https://jsonplaceholder.typicode.com/users')
         li.textContent = item.user;
         ul.appendChild(li);
     })
-   
+    onsole.log(value)
 })
 .catch(err => {
     errorMsg(err);
@@ -120,7 +122,7 @@ axios('https://reqres.in/api/unknown')
         li.textContent = item.color;
         ul.appendChild(li);
     })
-   
+    onsole.log(value)
 })
 .catch(err => {
     errorMsg(err);
